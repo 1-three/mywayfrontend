@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mywayapp/providers/user_provider.dart';
 import 'package:mywayapp/utils/global_variable.dart';
+import 'package:provider/provider.dart';
 
 class ResponsiveLayout extends StatefulWidget {
   final Widget mobileScreenLayout;

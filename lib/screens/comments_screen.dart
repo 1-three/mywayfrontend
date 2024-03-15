@@ -1,11 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:instagram_clone_flutter/models/user.dart';
-import 'package:instagram_clone_flutter/providers/user_provider.dart';
-import 'package:instagram_clone_flutter/resources/firestore_methods.dart';
-import 'package:instagram_clone_flutter/utils/colors.dart';
-import 'package:instagram_clone_flutter/utils/utils.dart';
-import 'package:instagram_clone_flutter/widgets/comment_card.dart';
+import 'package:mywayapp/models/user.dart';
+import 'package:mywayapp/providers/user_provider.dart';
+import 'package:mywayapp/resources/firestore_methods.dart';
+import 'package:mywayapp/utils/colors.dart';
+import 'package:mywayapp/utils/utils.dart';
+import 'package:mywayapp/widgets/comment_card.dart';
 import 'package:provider/provider.dart';
 
 class CommentsScreen extends StatefulWidget {
