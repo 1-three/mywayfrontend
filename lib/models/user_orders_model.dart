@@ -70,25 +70,21 @@ class Item {
     required this.name,
     required this.price,
     required this.quantity,
-    required this.isveg,
   });
 
   String name;
   double price;
   int quantity;
-  bool isveg;
 
   factory Item.fromJson(Map<String, dynamic> json) => Item(
         name: json["name"],
         price: json["price"],
         quantity: json["quantity"],
-        isveg: json["isveg"],
       );
 
   Map<String, dynamic> toJson() => {
         "name": name,
         "price": price,
         "quantity": quantity,
-        "isveg": isveg,
       };
 }
