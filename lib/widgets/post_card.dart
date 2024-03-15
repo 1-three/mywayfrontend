@@ -1,13 +1,15 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:mywayapp/models/user.dart' as model;
-import 'package:mywayapp/providers/user_provider.dart';
-import 'package:mywayapp/resources/firestore_methods.dart';
-import 'package:mywayapp/screens/comments_screen.dart';
-import 'package:mywayapp/utils/colors.dart';
-import 'package:mywayapp/utils/global_variable.dart';
-import 'package:mywayapp/utils/utils.dart';
+import 'package:instagram_clone_flutter/models/user.dart' as model;
+import 'package:instagram_clone_flutter/providers/user_provider.dart';
+import 'package:instagram_clone_flutter/resources/firestore_methods.dart';
+import 'package:instagram_clone_flutter/screens/comments_screen.dart';
+import 'package:instagram_clone_flutter/utils/colors.dart';
+import 'package:instagram_clone_flutter/utils/global_variable.dart';
+import 'package:instagram_clone_flutter/utils/utils.dart';
+import 'package:instagram_clone_flutter/widgets/like_animation.dart';
 import 'package:intl/intl.dart';
+import 'package:provider/provider.dart';
 
 class PostCard extends StatefulWidget {
   final snap;
