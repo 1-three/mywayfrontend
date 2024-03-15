@@ -38,13 +38,14 @@ class _LoginScreenState extends State<LoginScreen> {
     if (res == 'success') {
       if (context.mounted) {
         Navigator.of(context).pushAndRemoveUntil(
-            MaterialPageRoute(
-              builder: (context) => const ResponsiveLayout(
-                mobileScreenLayout: MobileScreenLayout(),
-                webScreenLayout: WebScreenLayout(),
-              ),
+          MaterialPageRoute(
+            builder: (context) => const ResponsiveLayout(
+              mobileScreenLayout: MobileScreenLayout(),
+              webScreenLayout: WebScreenLayout(),
             ),
-            (route) => false);
+          ),
+          (route) => false,
+        );
 
         setState(() {
           _isLoading = false;
@@ -90,6 +91,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 hintText: 'Enter your email',
                 textInputType: TextInputType.emailAddress,
                 textEditingController: _emailController,
+                hintTextColor: Colors.black, // Set hint text color
               ),
               const SizedBox(
                 height: 24,
@@ -99,6 +101,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 textInputType: TextInputType.text,
                 textEditingController: _passwordController,
                 isPass: true,
+                hintTextColor: Colors.black, // Set hint text color
               ),
               const SizedBox(
                 height: 24,
@@ -137,7 +140,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   Container(
                     padding: const EdgeInsets.symmetric(vertical: 8),
                     child: const Text(
-                      'Dont have an account?',
+                      'Don\'t have an account?',
                     ),
                   ),
                   GestureDetector(

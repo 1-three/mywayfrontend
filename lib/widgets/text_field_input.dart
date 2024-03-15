@@ -5,12 +5,14 @@ class TextFieldInput extends StatelessWidget {
   final bool isPass;
   final String hintText;
   final TextInputType textInputType;
+  final Color? hintTextColor; // Added hintTextColor parameter
   const TextFieldInput({
     Key? key,
     required this.textEditingController,
     this.isPass = false,
     required this.hintText,
     required this.textInputType,
+    this.hintTextColor, // Updated constructor to accept hintTextColor
   }) : super(key: key);
 
   @override
@@ -23,6 +25,7 @@ class TextFieldInput extends StatelessWidget {
       controller: textEditingController,
       decoration: InputDecoration(
         hintText: hintText,
+        hintStyle: TextStyle(color: hintTextColor), // Apply hintTextColor here
         border: inputBorder,
         focusedBorder: inputBorder,
         enabledBorder: inputBorder,
