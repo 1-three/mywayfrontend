@@ -116,7 +116,7 @@ class _LoginScreenState extends State<LoginScreen> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.all(Radius.circular(4)),
                     ),
-                    color: blueColor,
+                    color: Colors.red, // Change the color here
                   ),
                   child: !_isLoading
                       ? const Text(

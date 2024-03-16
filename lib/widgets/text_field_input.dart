@@ -34,6 +34,7 @@ class TextFieldInput extends StatelessWidget {
       ),
       keyboardType: textInputType,
       obscureText: isPass,
+      style: TextStyle(color: hintTextColor), // Apply textColor here
     );
   }
 }
